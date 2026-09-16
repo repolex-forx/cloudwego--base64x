@@ -1,0 +1,14 @@
+[2026-09-16T02:20:59Z] === ENRICH ITERATION 1 START | repo=cloudwego/base64x sha=b1a66433 ===
+[2026-09-16T02:20:59Z] [iter=1] PHASE START: enrich repo=cloudwego/base64x sha=b1a66433 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/b1a66433-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/b1a66433e2aaf4e90a73578a914a25afff44c28c.nq.gz
+[2026-09-16T02:21:02Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=80 MB
+[2026-09-16T02:21:05Z] [iter=1] AST store loaded triples=345550 load_secs=2 mem_mb=609 MB
+[2026-09-16T02:21:05Z] [iter=1] Step 2: Finding LSP targets mem_mb=609 MB
+[2026-09-16T02:21:05Z] [iter=1] LSP targets found call_sites=411 imports=0 extends=0 implements=0 secs=0
+[2026-09-16T02:21:05Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=609 MB
+[2026-09-16T02:21:06Z] [iter=1] Position index built positions=10860 nodes_with_types=11526 secs=1 mem_mb=609 MB
+[2026-09-16T02:21:06Z] [iter=1] Step 3: Starting LSP resolution mem_mb=609 MB already_completed_types=[] already_completed_files=0
+[2026-09-16T02:21:06Z] [iter=1] Resolving target type target_type=call_site count=411
+[2026-09-16T02:21:15Z] [iter=1] Target type resolved target_type=call_site resolved=59 errors=453 secs=9 mem_mb=609 MB
+[2026-09-16T02:21:15Z] [iter=1] Step 5: Writing final enrichment file triples=818
+[2026-09-16T02:21:15Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/b1a66433e2aaf4e90a73578a914a25afff44c28c.nq.gz size_kb=8
+[2026-09-16T02:21:15Z] [iter=1] PHASE END: enrich elapsed_s=16 elapsed_min=0.3 total_triples=818
